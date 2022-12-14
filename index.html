@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se liga no precinho</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="instrucoes">
+    <img src="imagens/snipping-tool-icon-256.png" alt="ferramenta_de_captura">
+    <p>Para tirar print da imagem pesquise pelo programa <b>ferramenta de captura</b> na barra de
+      pesquisa do windows e selecione a área da imagem para capturar</p>
+  </div>
+
+  <div class="containerMenu">
+    <div class="circle"></div>
+    <div id="hamburguer" class="icon">
+      <div class="linha"></div>
+      <div class="linha"></div>
+      <div class="linha"></div>
+    </div>
+  </div>
+
+  <div class="hamburguerMenu">
+    <div class="menu">
+      <div class="jspreco">
+        <input type="checkbox" class="checkbox reset checked">
+        <input type="text" id="s10" placeholder="s10">
+      </div>
+
+      <div class="jspreco">
+        <input type="checkbox" class="checkbox reset checked">
+        <input type="text" id="s500" placeholder="s500">
+      </div>
+
+      <div class="jspreco">
+        <input type="checkbox" class="checkbox reset checked">
+        <input type="text" id="etanol" placeholder="etanol">
+      </div>
+
+      <div class="jspreco">
+        <input type="checkbox" class="checkbox reset checked">
+        <input type="text" id="arla" placeholder="arla">
+      </div>
+
+      <div class="jspreco">
+        <input type="checkbox" class="checkbox reset checked">
+        <input type="text" id="gasolina" placeholder="gasolina">
+      </div>
+
+      <div class="jspreco">
+        <input type="checkbox" class="checkbox reset checked">
+        <input type="text" inputmode="numeric" id="aditivada" placeholder="aditivada">
+      </div>
+
+      <div class="unidade">
+        <p>unidade</p>
+        <input type="number" id="unidade" min="1" max="24">
+      </div>
+
+      <button class="btnreset" onclick="reset()">Resetar</button>
+    </div>
+
+
+    <div class="sjlogo">
+      <img src="imagens/Logo SJ.png">
+      <p>Rede de postos <br>e conveniência</p>
+    </div>
+  </div>
+
+  <div class="flyer">
+
+    <div class="retangulo_cima">
+      <div class="precinho">
+        <h2 class="seliga vermelho">se liga no</h2>
+        <h2 class="noprecinho amarelo">precinho</h2>
+      </div>
+
+      <div class="endereco">
+        <h3 class="vermelho">válido para</h3>
+        <h3 class="vermelho">unidade sj 01</h3>
+        <h3 class="amarelo">av. do café</h3>
+        <h3 class="amarelo">N. 1202</h3>
+      </div>
+    </div>
+
+    <div class="meio">
+      <div class="precos">
+        <p class="atendente">confirme o preço <br> com o atendente</p>
+
+        <div class="container s10" id="s10">
+          <div class="info">
+            <h3 class="combustivel um">diesel s10</h3>
+            <h3 class="preco">0.00/litro</h3>
+          </div>
+        </div>
+        <div class="container s500" id="s500">
+          <div class="info">
+            <h3 class="combustivel dois">diesel s500</h3>
+            <h3 class="preco">0.00/litro</h3>
+          </div>
+        </div>
+        <div class="container etanol" id="etanol">
+          <div class="info">
+            <h3 class="combustivel tres">etanol</h3>
+            <h3 class="preco">0.00/litro</h3>
+          </div>
+        </div>
+        <div class="container arla" id="arla">
+          <div class="info">
+            <h3 class="combustivel quatro">arla</h3>
+            <h3 class="preco">0.00/litro</h3>
+          </div>
+        </div>
+        <div class="container gasolina" id="gasolina">
+          <div class="info">
+            <h3 class="combustivel cinco">gasolina</h3>
+            <h3 class="preco">0.00/litro</h3>
+          </div>
+        </div>
+        <div class="container aditivada" id="aditivada">
+          <div class="info">
+            <h3 class="combustivel seis">aditivada</h3>
+            <h3 class="preco">0.00/litro</h3>
+          </div>
+        </div>
+      </div>
+      <div class="desconto_pix">
+        <i class="fa-brands fa-pix"></i>
+        <h3 class="pix">preços diferenciados <br> para pagamento via <br><b class="amarelo">pix e dinheiro</b></h3>
+      </div>
+      <img src="imagens/jotinha.png" class="jotinha">
+    </div>
+
+    <div class="footer">
+      <h4>preço sujeito a alteração sem aviso prévio</h4>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/unidades.js"></script>
+  <script src="https://kit.fontawesome.com/b5c3d917c6.js"></script>
+
+</body>
+
+</html>

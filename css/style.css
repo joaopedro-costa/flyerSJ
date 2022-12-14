@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: gotham;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.95) 100%), url(/fundopagina.png);
+    background-size: cover;
+}
+
+/*-------------- INSTRUÇÕES ----------------*/
+
+.instrucoes{
+    width: 13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(10px);
+    border-radius: 1vw;
+    padding: 1vw;
+    position: absolute;
+    right: 4.6vw;
+    color: #fff;
+    gap: 3vh;
+}
+
+.instrucoes p, .instrucoes b{
+    font-family: montserrat;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.instrucoes b{
+    font-weight: 900;
+    color: #0cb0d9;
+}
+
+.instrucoes img{
+    aspect-ratio: 1/1;
+    width: 8vw;
+}
+
+/*--------------------------------------------*/
+
+.flyer {
+    width: 1980px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    background: url(/fundoflyer.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scale: .48;
+    position: relative;
+    border: 2px solid #000;
+}
+
+/*--------------- HEADER ---------------*/
+
+.retangulo_cima {
+    width: 100%;
+    height: 21.5%;
+    background-color: #fff;
+    border-radius: 0 0 5vw 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0 10vw;
+    position: absolute;
+    top: 0;
+}
+
+.precinho {
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 4vw;
+    font-style: italic;
+    font-size: 4vw;
+}
+
+.noprecinho{
+    font-size: 6.6vw;
+}
+
+.endereco{
+    font-size: 2.5vw;
+    line-height: 2.4vw;
+}
+
+/*-------------------- MEIO --------------------*/
+
+.meio{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 10%;
+}
+
+.jotinha{
+    height: 180vh;
+    position: absolute;
+    margin-left: 33%;
+    z-index: 100;
+    transform: translate(12vw, 10vh);
+}
+
+.precos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    position: relative;
+    transform: translateX(-2.5vw) translateY(-1vh);
+}
+
+.atendente{
+    font-size: 2.2vw;
+    color: #fff;
+    line-height: 4.7vh;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.container{
+    width: 25vw;
+    height: 11vh;
+    font-size: 50px;
+    padding: 20px 40px;
+    border-radius: 1.8vw;
+    position: relative;
+    transition: .3s;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 4vh;
+    position: absolute;
+    top: 1.3vw;
+    left: 3.6vw;
+}
+
+.preco{
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.preco::first-letter{
+    font-size: 5vw;
+}
+
+.combustivel{
+    position: relative;
+    font-size: 2.5vw;
+}
+
+.s10{background-color: #f49f00;}
+.s500{background-color: #898989;}
+.arla{background-color: #138fd7;}
+.etanol{background-color: #07970d;}
+.gasolina{background-color: #e40505;}
+.aditivada{background-color: #0cb0d9;}
+
+.s10 .combustivel{
+    transform: translateX(1.5vw);
+}
+
+.s500 .combustivel{
+    transform: translateX(2.5vw);
+}
+
+.etanol .combustivel{
+    transform: translateX(-.5vw);
+}
+
+.arla .combustivel{
+    transform: translateX(-2vw);
+}
+
+.gasolina .combustivel{
+    transform: translateX(1vw);
+}
+
+.aditivada .combustivel{
+    transform: translateX(1.2vw);
+}
+
+.pix, .pix b{
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.desconto_pix{
+    position: relative;
+    transform: translate(-18.5vw, 38vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5vw 0;
+    color: #fff;
+    font-size: 1.2vw;
+    line-height: 3vh;
+    letter-spacing: 2px;
+}
+
+.desconto_pix i{
+    font-size: 5vw;
+}
+
+/*--------------- FOOTER ------------------*/
+
+.footer{
+    width: 100%;
+    font-size: 2.5vw;
+    padding: .5vh 0 .5vh 2vw;
+    background-color: #ffc600;
+    color: #cf110b;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer h4{
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.amarelo{
+    color: #f49f00;
+}
+
+.vermelho{
+    color: #af0a04;
+}
+
+.none{
+    display: none;
+}
+
+
+
+
+
+
+/*------------------- MENU ------------------------*/
+
+.circle{
+    position: absolute;
+    top: -5%;
+    left: -2%;
+    border-radius: 50%;
+    width: 150px;
+    aspect-ratio: 1/1;
+    background-color: #fff;
+}
+
+.ativar .linha:nth-child(1){transform: rotate(45deg) translateY(13px);}
+
+.ativar .linha:nth-child(2){scale: 0;}
+
+.ativar .linha:nth-child(3){transform: rotate(-45deg) translateY(-13px);}
+
+.icon{
+    padding: .4vw;
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    transition: .3s;
+}
+
+.none{
+    display: none;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.linha{
+    margin: 6px;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    transition: .5s;
+}
+
+.hamburguerATIVO {
+    transform: translateX(0) !important;
+}
+
+.hamburguerMenu {
+    overflow: hidden;
+    transform: translateX(-100%);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 20vw;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    transition: .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.icon{
+    z-index: 10;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.btnreset{
+    width: 10vw;
+    padding: .5vw 1.5vw;
+    border: 0;
+    border-radius: 3vw;
+    background-color: #f49f00;
+    color: #fff;
+    font-size: 1vw;
+    transition: .3s;
+    margin-top: 2vw;
+}
+
+.btnreset:hover{
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #e40505;
+}
+
+input{
+    background-color: transparent;
+    font-size: 2vw;
+    text-align: center;
+    width: 10vw;
+    border-radius: 2vw;
+    border: 0;
+    color: #fff;
+}
+
+input:focus{
+    outline: none;
+    color: #fff;
+}
+
+.jspreco{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3vw;
+    overflow-y: hidden;
+    box-sizing: content-box;
+}
+
+.jspreco:nth-child(1){background-color: #f49f00;}
+.jspreco:nth-child(2){background-color: #898989;}
+.jspreco:nth-child(3){background-color: #07970d;}
+.jspreco:nth-child(4){background-color: #138fd7;}
+.jspreco:nth-child(5){background-color: #e40505;}
+.jspreco:nth-child(6){background-color: #0cb0d9;}
+
+.checkbox{
+    display: none;
+}
+
+.jspreco input::placeholder{
+    font-size: 1.5vw;
+    font-family: montserrat;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.608);
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.unidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 2vh;
+    color: #ffc600;
+}
+
+.unidade input{
+    border-radius: 0;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+#unidade{
+    height: 2vw;
+    font-size: 2vw;
+    width: 5vw;
+}
+
+.sjlogo{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 .5vw;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+
+.sjlogo img{
+    width: 3vw;
+    aspect-ratio: 1/1;
+}
