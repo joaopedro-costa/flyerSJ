@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.95) 100%), url(/fundopagina.png);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.95) 100%), url("../imagens/fundopagina.png");
     background-size: cover;
 }
 
@@ -63,7 +63,7 @@ body {
     width: 1980px;
     aspect-ratio: 1/1;
     overflow: hidden;
-    background: url(/fundoflyer.jpg);
+    background: url("../imagens/fundoflyer.jpg");
     display: flex;
     justify-content: center;
     align-items: center;

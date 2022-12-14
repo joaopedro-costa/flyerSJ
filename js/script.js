@@ -150,5 +150,3 @@ hamburguer.addEventListener('click', function() {
     document.querySelectorAll('.icon')[0].classList.toggle('ativar')
     document.querySelectorAll('.hamburguerMenu')[0].classList.toggle('hamburguerATIVO')
 })
-
-window.alert('teste')
